@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script type="text/javascript">
+		var user=[
+		{name:"swaroopa", age:22, country:"India", hobbies:["reading", "painting"]},
+		{name:"roopa", age:21, country:"India", hobbies:["reading", "painting", "writing"]},
+		{name:"paru", age:32, country:"Us", hobbies:["reading", "writing"]},
+		];
+		function display(){
+			for(var i=0; i<user.length; i++){
+				document.write(user[i].name+" "+user[i].age+"  "+user[i].hobbies+"<br>");
+
+			}
+		}
+
+		document.write("Displaying all the objects on the console");
+		document.write("<br>");
+		display();
+		document.write("<br>");
+
+		function display1(){
+			for(var i=0; i<user.length; i++){
+				if(user[i].age<30){
+					document.write(user[i].name+" "+user[i].age+"  "+user[i].hobbies+"<br>");
+				}
+				
+			}
+		}
+		
+		document.write("Displaying all the objects on the console who's age is less than 30");
+		document.write("<br>");
+		display1();
+		document.write("<br>");
+
+
+		function display2(){
+				for(var i=0; i<user.length; i++){
+				if(user[i].country=="india" || user[i].country=="India"){
+					document.write(user[i].name+" "+user[i].age+"  "+user[i].hobbies+"<br>");
+				}
+				
+			}
+		}
+		
+		document.write("Displaying all the objects on the console who's country is India");
+		document.write("<br>");
+		display2();
+		document.write("<br>");
+
+			</script>
+		
+</head>
+<body>
+	<h6></h6>
+
+</body>
+</html>
